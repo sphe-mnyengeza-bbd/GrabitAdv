@@ -140,7 +140,7 @@ section figcaption {
 
 #contact-us input,
 #contact-us textarea {
-  width: 100%;
+  width: 95%;
   margin-bottom: 1.25rem;
   padding: 0.875rem;
   border: 1px solid #40dec6;
@@ -203,7 +203,7 @@ section figcaption {
 
 #join-us-image figure {
   margin: 0;
-  display: inline-block; /* Ensure it's treated as an inline-block element */
+  display: inline-block; 
 }
 
 #join-us-image img {
@@ -219,7 +219,7 @@ section figcaption {
 
 footer {
   background: linear-gradient(45deg, #302f30, black);
-  color: #ffc1e3;
+  color: black;
   text-align: center;
   border-radius: 15.625rem 0 0 0;
   padding: 1.875rem 0;
@@ -258,7 +258,7 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-  color: #ffc1e3;
+  color: black;
   text-shadow: 0 0 0.5rem black;
 }
 
@@ -280,6 +280,20 @@ footer ul li a:hover {
 
   section figure {
     max-width: 100%;
+  }
+
+  #contact-us input,
+  #contact-us textarea {
+    font-size: 12pt;
+  }
+
+  #contact-us button {
+    padding: 1.25rem 1.75rem;
+    font-size: 13pt;
+  }
+
+  #contact-us img {
+    max-width: 90%; 
   }
 }
 
