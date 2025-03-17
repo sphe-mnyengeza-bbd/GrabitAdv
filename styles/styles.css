@@ -6,44 +6,45 @@ body {
   overflow-x: hidden;
 }
 
-h1 {
-  font-weight: bold;
-  font-size: 22.5pt;
-}
-
 h1,
 h2,
 h3 {
   margin: 0;
   color: #40dec6;
   text-align: center;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.75rem;
+  font-weight: bold;
 }
 
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(150deg, black, #302f30);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background: linear-gradient(150deg, black, rgb(46, 52, 52));
   border-radius: 0 0 15.625rem 0;
-  padding: 1.125rem 1rem;
+  padding: 0.75rem 1rem;
 }
 
 nav ul {
   display: flex;
-  gap: 1.5625rem;
+  gap: 1.6rem;
   list-style: none;
-  padding: 0.325rem;
+  padding: 0.25rem;
 }
 
 nav ul li {
   list-style: none;
+  padding: 0.75rem 1.125rem;
 }
 
 nav ul li a {
   text-decoration: none;
   color: #40dec6;
-  font-size: 12pt;
+  font-size: 11pt;
   transition: color 0.3s, transform 0.2s;
 }
 
@@ -53,12 +54,12 @@ nav ul li a:hover {
 }
 
 ul li {
-  background: #302f30;
+  background: #083735;
   color: #40dec6;
   padding: 1.875rem;
   border-radius: 0.75rem;
   text-align: center;
-  font-size: 13.5pt;
+  font-size: 11pt;
   transition: transform 0.3s ease-in-out;
   margin-bottom: 1.25rem;
   list-style: lower-roman;
@@ -69,18 +70,19 @@ ul li:hover {
 }
 
 p {
-  font-size: 14pt;
+  font-size: 12pt;
   margin-bottom: 1.25rem;
   text-align: center;
 }
 
 section {
-  padding: 2.5rem;
-  margin: 2.5rem auto;
+  padding: 1.5rem;
+  margin: 2.2rem auto;
   max-width: 75rem;
   text-align: center;
   color: #40dec6;
   border-radius: 2.25rem;
+  scroll-margin-top: 12rem;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -135,14 +137,18 @@ section figcaption {
   width: 95%;
   margin-bottom: 1.25rem;
   padding: 0.875rem;
-  border: 0.1rem solid #40dec6;
+  border: 0.01rem solid #40dec6;
   border-radius: 0.625rem;
-  font-size: 15.5pt;
-  background: #302f30;
+  font-size: 12.5pt;
+  background: #083735;
+}
+
+#contact-us ::placeholder {
+  color: #40dec6;
 }
 
 #contact-us label {
-  font-size: 15pt;
+  font-size: 12pt;
 }
 
 #contact-us textarea {
@@ -150,10 +156,10 @@ section figcaption {
 }
 
 #contact-us button {
-  background: #302f30;
+  background: #083735;
   color: #40dec6;
-  padding: 1.75rem 2.5rem;
-  font-size: 14.5pt;
+  padding: 0.75rem 2.125rem;
+  font-size: 11.5pt;
   border: none;
   border-radius: 0.625rem;
   cursor: pointer;
@@ -166,11 +172,11 @@ section figcaption {
 }
 
 footer {
-  background: linear-gradient(150deg, #302f30, black);
+  background: linear-gradient(150deg, rgb(46, 52, 52), black);
   color: black;
   text-align: center;
   border-radius: 15.625rem 0 0 0;
-  padding: 1.875rem 0;
+  padding: 0.75rem 1rem;
 }
 
 footer h3 {
@@ -187,7 +193,7 @@ footer ul {
 }
 
 footer ul li {
-  background: rgba(255, 255, 255, 0.1);
+  background: #083735;
   padding: 0.75rem 1.125rem;
   border-radius: 0.625rem;
   transition: all 0.3s;
@@ -197,7 +203,7 @@ footer ul li {
 footer ul li a {
   text-decoration: none;
   color: #40dec6;
-  font-size: 13.5pt;
+  font-size: 11.5pt;
   transition: color 0.3s ease;
 }
 
@@ -231,11 +237,15 @@ footer ul li a:hover {
 
   #contact-us button {
     padding: 1.25rem 1.75rem;
-    font-size: 13pt;
+    font-size: 11pt;
   }
 
   #contact-us img {
     max-width: 90%;
+  }
+
+  header {
+    position: relative;
   }
 }
 
@@ -244,6 +254,10 @@ footer ul li a:hover {
     flex-direction: column;
     align-items: center;
     gap: 0.9375rem;
+  }
+
+  header {
+    position: relative;
   }
 }
 
@@ -259,6 +273,10 @@ footer ul li a:hover {
 
   footer h3 {
     font-size: medium;
+  }
+
+  header {
+    position: relative;
   }
 }
 
