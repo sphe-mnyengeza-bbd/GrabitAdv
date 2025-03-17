@@ -6,6 +6,11 @@ body {
   overflow-x: hidden;
 }
 
+h1 {
+  font-weight: bold;
+  font-size: 22.5pt;
+}
+
 h1,
 h2,
 h3 {
@@ -19,14 +24,9 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(45deg, black, #302f30);
+  background: linear-gradient(150deg, black, #302f30);
   border-radius: 0 0 15.625rem 0;
   padding: 1.125rem 1rem;
-}
-
-h1 {
-  font-weight: bold;
-  font-size: 22.5pt;
 }
 
 nav ul {
@@ -48,7 +48,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #d672a4;
+  color: black;
   transform: scale(1.1);
 }
 
@@ -66,7 +66,6 @@ ul li {
 
 ul li:hover {
   transform: scale(1.08);
-  background: black;
 }
 
 p {
@@ -82,7 +81,6 @@ section {
   text-align: center;
   color: #40dec6;
   border-radius: 2.25rem;
-  backdrop-filter: blur(10px);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -119,23 +117,17 @@ section figcaption {
   margin-top: 0.625rem;
 }
 
-.feature-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.875rem;
-  margin-top: 1.25rem;
+#join-us-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2.5rem;
 }
 
-.feature-card {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 1.875rem;
-  border-radius: 2.75rem;
-  transition: transform 0.3s ease;
-}
-
-.feature-card:hover {
-  transform: scale(1.07);
-  background: rgba(255, 255, 255, 0.2);
+#join-us-image figure {
+  margin: 0;
+  display: inline-block;
 }
 
 #contact-us input,
@@ -143,11 +135,14 @@ section figcaption {
   width: 95%;
   margin-bottom: 1.25rem;
   padding: 0.875rem;
-  border: 1px solid #40dec6;
+  border: 0.1rem solid #40dec6;
   border-radius: 0.625rem;
-  font-size: 13.5pt;
+  font-size: 15.5pt;
   background: #302f30;
-  color: #e0e0e0;
+}
+
+#contact-us label {
+  font-size: 15pt;
 }
 
 #contact-us textarea {
@@ -166,59 +161,12 @@ section figcaption {
 }
 
 #contact-us button:hover {
-  background: linear-gradient(45deg, #302f30, black);
-  transform: translateY(-3px);
-}
-
-#contact-us figure {
-  margin-top: 2.5rem;
-  text-align: center;
-}
-
-#contact-us img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 1.625rem;
-  transition: transform 0.3s;
-}
-
-#contact-us img:hover {
-  transform: scale(1.05);
-}
-
-#contact-us figcaption {
-  font-size: 12pt;
-  color: #40dec6;
-  text-align: center;
-  margin-top: 0.625rem;
-}
-
-#join-us-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 2.5rem;
-}
-
-#join-us-image figure {
-  margin: 0;
-  display: inline-block; 
-}
-
-#join-us-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 1.625rem;
-  transition: transform 0.3s;
-}
-
-#join-us-image img:hover {
-  transform: scale(1.05);
+  transform: translateY(-0.5rem);
+  color: black;
 }
 
 footer {
-  background: linear-gradient(45deg, #302f30, black);
+  background: linear-gradient(150deg, #302f30, black);
   color: black;
   text-align: center;
   border-radius: 15.625rem 0 0 0;
@@ -246,10 +194,6 @@ footer ul li {
   list-style: none;
 }
 
-footer ul li:hover {
-  background: rgba(255, 255, 255, 0.2);
-}
-
 footer ul li a {
   text-decoration: none;
   color: #40dec6;
@@ -259,9 +203,7 @@ footer ul li a {
 
 footer ul li a:hover {
   color: black;
-  text-shadow: 0 0 0.5rem black;
 }
-
 @media (max-width: 62rem) {
   .feature-grid {
     grid-template-columns: repeat(1, 1fr);
@@ -293,7 +235,7 @@ footer ul li a:hover {
   }
 
   #contact-us img {
-    max-width: 90%; 
+    max-width: 90%;
   }
 }
 
@@ -310,8 +252,12 @@ footer ul li a:hover {
     padding: 1.25rem;
   }
 
-  footer {
+  footer, nav {
     padding: 1.25rem;
+  }
+
+  footer h3 {
+    font-size: medium;
   }
 }
 
