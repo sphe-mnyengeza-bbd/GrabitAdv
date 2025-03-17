@@ -1,7 +1,7 @@
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #40dec6;
-  background-color: black;
+  font-family: "Roboto", sans-serif;
+  color: #f4f6f9;
+  background-color: #1b1f23;
   margin: 0;
   overflow-x: hidden;
 }
@@ -10,9 +10,9 @@ h1,
 h2,
 h3 {
   margin: 0;
-  color: #40dec6;
+  color: #50e3c2;
   text-align: center;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
   font-weight: bold;
 }
 
@@ -24,78 +24,81 @@ header {
   top: 0;
   z-index: 1000;
   width: 100%;
-  background: linear-gradient(150deg, black, rgb(46, 52, 52));
-  border-radius: 0 0 15.625rem 0;
-  padding: 0.75rem 1rem;
+  background: linear-gradient(150deg, #2e3434, #212b2b);
+  padding: 1rem 1.5rem;
+  border-radius: 0 0 18rem 0;
 }
 
 nav ul {
   display: flex;
-  gap: 1.6rem;
+  gap: 2rem;
   list-style: none;
   padding: 0.25rem;
 }
 
 nav ul li {
-  list-style: none;
-  padding: 0.75rem 1.125rem;
+  padding: 0.75rem 1rem;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #40dec6;
-  font-size: 11pt;
+  color: #f4f6f9;
+  font-size: 14pt;
   transition: color 0.3s, transform 0.2s;
 }
 
 nav ul li a:hover {
-  color: black;
-  transform: scale(1.1);
+  transform: translateY(-1rem);
+  background-color: #50e3c2;
+  color: #212b2b;
 }
 
 ul li {
-  background: #083735;
-  color: #40dec6;
-  padding: 1.875rem;
-  border-radius: 0.75rem;
+  background: #283b3b;
+  color: #50e3c2;
+  padding: 2rem;
+  border-radius: 1rem;
   text-align: center;
-  font-size: 11pt;
+  font-size: 13pt;
   transition: transform 0.3s ease-in-out;
   margin-bottom: 1.25rem;
-  list-style: lower-roman;
+  list-style-type: none;
 }
 
 ul li:hover {
-  transform: scale(1.08);
+  transform: translateY(-1rem);
+  background-color: #50e3c2;
+  color: #212b2b;
 }
 
 p {
-  font-size: 12pt;
-  margin-bottom: 1.25rem;
+  font-size: 14pt;
+  margin-bottom: 1.5rem;
   text-align: center;
 }
 
 section {
   padding: 1.5rem;
   margin: 2.2rem auto;
-  max-width: 75rem;
+  max-width: 80%;
   text-align: center;
-  color: #40dec6;
-  border-radius: 2.25rem;
+  color: #f4f6f9;
+  border-radius: 1.5rem;
+  background: #212b2b;
   scroll-margin-top: 12rem;
   transition: transform 0.3s ease-in-out;
 }
 
 section:hover {
-  transform: scale(1.03);
-  background: black;
+  transform: translateY(-1rem);
+  background: #2e3434;
 }
 
 section .content {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 4rem;
   text-align: left;
   flex-wrap: wrap;
 }
@@ -109,14 +112,13 @@ section figure {
 section img {
   width: 100%;
   height: auto;
-  border-radius: 1.625rem;
+  border-radius: 1.5rem;
 }
 
 section figcaption {
-  font-size: 12pt;
-  color: #40dec6;
-  text-align: center;
-  margin-top: 0.625rem;
+  font-size: 13pt;
+  color: #50e3c2;
+  margin-top: 1rem;
 }
 
 #join-us-image {
@@ -124,7 +126,7 @@ section figcaption {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 2.5rem;
+  margin-top: 3rem;
 }
 
 #join-us-image figure {
@@ -134,91 +136,149 @@ section figcaption {
 
 #contact-us input,
 #contact-us textarea {
-  width: 95%;
-  margin-bottom: 1.25rem;
-  padding: 0.875rem;
-  border: 0.01rem solid #40dec6;
-  border-radius: 0.625rem;
-  font-size: 12.5pt;
-  background: #083735;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 0.1rem solid #50e3c2;
+  border-radius: 0.75rem;
+  font-size: 14pt;
+  background: #283b3b;
 }
 
 #contact-us ::placeholder {
-  color: #40dec6;
+  color: #50e3c2;
 }
 
 #contact-us label {
-  font-size: 12pt;
+  font-size: 13pt;
 }
 
 #contact-us textarea {
-  height: 15rem;
+  height: 16rem;
 }
 
 #contact-us button {
-  background: #083735;
-  color: #40dec6;
-  padding: 0.75rem 2.125rem;
-  font-size: 11.5pt;
+  background: #283b3b;
+  color: #50e3c2;
+  padding: 1rem 2.5rem;
+  font-size: 14pt;
   border: none;
-  border-radius: 0.625rem;
+  border-radius: 0.75rem;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
 }
 
 #contact-us button:hover {
-  transform: translateY(-0.5rem);
-  color: black;
+  transform: translateY(-1rem);
+  background-color: #50e3c2;
+  color: #212b2b;
 }
 
 footer {
-  background: linear-gradient(150deg, rgb(46, 52, 52), black);
-  color: black;
+  background: linear-gradient(150deg, #2e3434, #212b2b);
+  color: #212b2b;
   text-align: center;
-  border-radius: 15.625rem 0 0 0;
-  padding: 0.75rem 1rem;
+  border-radius: 18rem 0 0 0;
+  padding: 1rem 1.5rem;
 }
 
 footer h3 {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-size: 18pt;
 }
 
 footer ul {
   display: flex;
   justify-content: center;
-  gap: 5rem;
-  flex-wrap: wrap;
+  gap: 3rem;
   padding: 0;
   list-style: none;
 }
 
 footer ul li {
-  background: #083735;
-  padding: 0.75rem 1.125rem;
-  border-radius: 0.625rem;
-  transition: all 0.3s;
-  list-style: none;
+  background: #283b3b;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  transition: transform 0.3s ease;
 }
 
 footer ul li a {
   text-decoration: none;
-  color: #40dec6;
-  font-size: 11.5pt;
+  color: #f4f6f9;
+  font-size: 14pt;
   transition: color 0.3s ease;
 }
 
 footer ul li a:hover {
-  color: black;
+  transform: translateY(-1rem);
+  background-color: #50e3c2;
+  color: #212b2b;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (max-width: 36rem) {
+  section {
+    padding: 1.25rem;
+  }
+
+  footer,
+  nav {
+    padding: 0.25rem;
+  }
+
+  footer h3 {
+    font-size: medium;
+  }
+
+  header {
+    position: relative;
+  }
+
+  nav ul,
+  footer ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5375rem;
+  }
+
+  section ul li {
+    font-size: 12pt;   
+    margin: 1rem;   
+  }
+}
+
+@media (max-width: 48rem) {
+  body {
+    overflow-x: hidden;
+  }
+
+  nav ul,
+  footer ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5375rem;
+  }
+
+  header {
+    position: relative;
+  }
+}
+
 @media (max-width: 62rem) {
-  .feature-grid {
-    grid-template-columns: repeat(1, 1fr);
+  body {
+    overflow-x: hidden;
   }
 
   nav ul {
     flex-direction: column;
     text-align: center;
-    gap: 0.9375rem;
+    gap: 0.5375rem;
   }
 
   section .content {
@@ -247,40 +307,44 @@ footer ul li a:hover {
   header {
     position: relative;
   }
-}
 
-@media (max-width: 48rem) {
-  footer ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.9375rem;
+  section ul {
+    display: flex;             
+    flex-wrap: wrap;          
+    justify-content: center;   
+    align-items: center;        
+    padding: 0;
+    margin: 0;
+    width: 100%;                 
   }
 
-  header {
-    position: relative;
-  }
-}
-
-@media (max-width: 36rem) {
-  section {
-    padding: 1.25rem;
-  }
-
-  footer,
-  nav {
-    padding: 1.25rem;
-  }
-
-  footer h3 {
-    font-size: medium;
+  section ul li {
+    background: #283b3b;
+    color: #50e3c2;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 13pt;
+    margin: 1.25rem; 
+    list-style-type: none;
+    max-width: 250px; 
+    flex: 1 1 100%; 
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
   }
 
-  header {
-    position: relative;
+  section ul li:hover {
+    transform: translateY(-1rem);
+    background-color: #50e3c2;
+    color: #212b2b;
   }
 }
 
 @media (min-width: 75rem) {
+  body {
+    overflow-x: hidden;
+  }
+
   .container {
     max-width: 73.125rem;
   }
