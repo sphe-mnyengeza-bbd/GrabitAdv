@@ -327,7 +327,7 @@ footer ul li a:hover {
     font-size: 13pt;
     margin: 1.25rem; 
     list-style-type: none;
-    max-width: 250px; 
+    max-width: 15.625rem; 
     flex: 1 1 100%; 
     box-sizing: border-box;
     transition: transform 0.3s ease-in-out;
