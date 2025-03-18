@@ -103,33 +103,18 @@ section .content {
   flex-wrap: wrap;
 }
 
-section figure {
-  margin: 0;
-  flex: 1;
-  max-width: 45%;
-}
-
 section img {
-  width: 100%;
+  width: 50%;
   height: auto;
   border-radius: 1.5rem;
 }
 
-section figcaption {
-  font-size: 13pt;
-  color: #50e3c2;
-  margin-top: 1rem;
-}
-
-#join-us-image {
+#join-us-img {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin-top: 3rem;
-}
-
-#join-us-image figure {
   margin: 0;
   display: inline-block;
 }
@@ -284,10 +269,6 @@ footer ul li a:hover {
   section .content {
     flex-direction: column;
     text-align: center;
-  }
-
-  section figure {
-    max-width: 100%;
   }
 
   #contact-us input,

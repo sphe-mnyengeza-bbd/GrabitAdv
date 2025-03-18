@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <header aria-label="Main site navigation">
+    <header>
       <h1>GrabIt</h1>
       <nav>
         <ul>
@@ -22,7 +22,7 @@
     </header>
 
     <main>
-      <section id="about-us" aria-label="About GrabIt Section">
+      <section id="about-us">
         <h2>About Us</h2>
         <section class="content">
           <p>
@@ -31,18 +31,14 @@
             fun and efficient, GrabIt blends teamwork and gamification to bring
             out the best in every team member.
           </p>
-          <figure>
             <img
               src="assets/aboutUs.png"
+              id="about-us-img"
               alt="Team collaborating on a productivity tool"/>
-            <figcaption>
-              An image of a team collaboration with GrabIt productivity tool
-            </figcaption>
-          </figure>
         </section>
       </section>
 
-      <section id="how-it-works" aria-label="How GrabIt Works Section">
+      <section id="how-it-works">
         <h2>How It Works</h2>
         <section class="content">
           <p>
@@ -51,15 +47,10 @@
             difficulty, meet deadlines, and earn points as you complete them.
             With every task, you take a step toward your team's success!
           </p>
-          <figure>
             <img
               src="assets/howItWorks.png"
+              id="how-it-works-img"
               alt="User managing tasks using Kanban system"/>
-            <figcaption>
-              4 images of a user managing tasks using a gamified Kanban system
-              in GrabIt
-            </figcaption>
-          </figure>
           <p>
             The gamified system ensures that every completed task adds
             excitement and motivation, while our leaderboard fosters healthy
@@ -68,7 +59,7 @@
         </section>
       </section>
 
-      <section id="team-features" aria-label="Team Features Section">
+      <section id="team-features">
         <h2>Teamwork Redefined</h2>
         <p>
           Collaborate like never before! GrabIt's features are built to promote
@@ -105,19 +96,11 @@
             GrabIt!
           </strong>
         </p>
-
-        <section id="join-us-image">
-          <figure>
-            <img src="assets/joinUs.png" alt="Team happy with grabit"/>
-            <figcaption>
-              An image of a team of 6 members smiling and looking happy with the
-              GrabIt productivity tool
-            </figcaption>
-          </figure>
+            <img src="assets/joinUs.png" id="join-us-img" alt="Team happy with grabit"/>
         </section>
       </section>
 
-      <section id="contact-us" aria-label="Contact Form Section">
+      <section id="contact-us">
         <h2>Contact Us</h2>
         <p>
           Ready to revolutionize your team's productivity? Get in touch with us
@@ -133,12 +116,12 @@
           <label for="message">Message:</label>
           <textarea id="message" placeholder="Your Message"></textarea>
 
-          <button type="submit">Submit</button>
+          <button type="button">Submit</button>
         </form>
       </section>
     </main>
 
-    <footer aria-label="Footer Section">
+    <footer>
       <h3>GrabIt - Productivity Into Play!</h3>
       <ul>
         <li><a href="">Website</a></li>
